@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meizu.flyme.launcher.MzArrangeIconsPreview android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:launcher="http://schemas.android.com/apk/res-auto">
-    <ImageView android:layout_gravity="bottom" android:id="@id/scroll_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/paged_indicator_marginBottom" android:src="@drawable/scroll_bar" android:scaleType="fitXY" android:paddingStart="@dimen/paged_view_indicator_padding_left" android:paddingEnd="@dimen/paged_view_indicator_padding_right" />
-    <ImageView android:layout_gravity="bottom" android:id="@id/paged_view_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/paged_indicator_marginBottom" android:src="@drawable/scroll_indicator" android:scaleType="fitXY" android:alpha="0.3" />
-    <com.meizu.flyme.launcher.PreviewWorkspace android:id="@id/preview_workspace" android:layout_width="fill_parent" android:layout_height="@dimen/workspace_preview_height" android:layout_marginBottom="@dimen/preview_workspace_marginBottom" launcher:scrollIndicatorPaddingLeft="@dimen/paged_view_indicator_padding_left" launcher:scrollIndicatorPaddingRight="@dimen/paged_view_indicator_padding_right" />
-    <com.meizu.flyme.launcher.ScrollIndicatorDropTarget android:layout_gravity="bottom" android:id="@id/scroll_indicator_drop_target" android:layout_width="fill_parent" android:layout_height="@dimen/preview_workspace_marginBottom" />
-</com.meizu.flyme.launcher.MzArrangeIconsPreview>

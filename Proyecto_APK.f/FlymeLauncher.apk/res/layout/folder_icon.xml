@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meizu.flyme.launcher.FolderIcon android:background="@drawable/focusable_view_bg" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.meizu.flyme.launcher.IconBackGroundView android:id="@id/foldericon_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="@string/icon_background_alpha" />
-    <LinearLayout android:orientation="vertical" android:id="@id/folder_icon" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <ImageView android:layout_gravity="center_horizontal" android:id="@id/preview_background" android:layout_width="@dimen/folder_icon_size" android:layout_height="@dimen/folder_icon_size" android:src="@drawable/ic_launcher_folder" />
-        <com.meizu.flyme.launcher.BubbleTextView android:id="@id/folder_icon_name" style="@style/WorkspaceIcon.folder" />
-    </LinearLayout>
-</com.meizu.flyme.launcher.FolderIcon>

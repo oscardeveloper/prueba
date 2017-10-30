@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <plurals name="number_of_items_selected">
-        <item quantity="other">%1$dشے (اشیاء) منتخب کی گئیں</item>
-        <item quantity="zero">%1$dشے (اشیاء) منتخب کی گئیں</item>
-        <item quantity="one">%1$dشے (اشیاء) منتخب کی گئیں</item>
-    </plurals>
-</resources>

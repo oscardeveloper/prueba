@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meizu.flyme.launcher.MzNfcShareDropTarget android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="@dimen/nfc_drop_target_height" android:layout_marginTop="-26.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_nfc_share" />
-</com.meizu.flyme.launcher.MzNfcShareDropTarget>
