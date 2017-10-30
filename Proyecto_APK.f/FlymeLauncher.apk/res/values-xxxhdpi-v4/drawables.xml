@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="arrange_preview_current_bg">false</item>
+    <item type="drawable" name="bg_cling1">false</item>
+    <item type="drawable" name="bg_cling2">false</item>
+    <item type="drawable" name="bg_cling3">false</item>
+    <item type="drawable" name="bg_cling4">false</item>
+    <item type="drawable" name="custom_content_page">false</item>
+    <item type="drawable" name="paged_view_indicator">false</item>
+    <item type="drawable" name="widget_container_holo">false</item>
+    <item type="drawable" name="widget_tile">false</item>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meizu.flyme.launcher.Folder android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meizu.flyme.launcher.FolderBackgroundView android:id="@id/folder_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/read_folder" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.meizu.flyme.launcher.FolderEditText android:textSize="@dimen/folder_name_size" android:textColor="@color/folder_items_text_color" android:textColorHighlight="@android:color/transparent" android:gravity="center" android:id="@id/folder_name" android:layout_width="wrap_content" android:layout_height="@dimen/folder_name_height" android:singleLine="true" android:imeOptions="flagNoExtractUi" android:textCursorDrawable="@drawable/folder_edittext_cursor" android:fontFamily="sans-serif-medium" />
+        <LinearLayout android:id="@id/background" android:layout_width="@dimen/folder_width" android:layout_height="@dimen/folder_height">
+            <ScrollView android:scrollbarThumbVertical="@drawable/show_scrollbar" android:id="@id/scroll_view" android:paddingTop="@dimen/folder_cell_padding_top" android:paddingBottom="@dimen/folder_cell_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+                <com.meizu.flyme.launcher.CellLayout android:id="@id/folder_content" android:paddingLeft="@dimen/folder_padding_left" android:paddingRight="@dimen/folder_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:cacheColorHint="#ff333333" android:hapticFeedbackEnabled="false" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</com.meizu.flyme.launcher.Folder>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meizu.flyme.launcher.LauncherCircleCling android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/cling_tips_textsize" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/tips_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cling_tipstext_margin_botttom" />
+    <com.meizu.flyme.launcher.TwoFinegersClingView android:id="@id/twofingers_cling" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.meizu.flyme.launcher.LongPressClingView android:id="@id/longpress_cling" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.meizu.flyme.launcher.SearchClingView android:id="@id/search_cling" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.meizu.flyme.launcher.LauncherCircleCling>

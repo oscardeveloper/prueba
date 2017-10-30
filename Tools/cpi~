@@ -1,0 +1,35 @@
+#! /bin/bash
+
+current=`pwd`
+
+
+	echo
+	cd other
+	echo "  ____________________________________________________________________________ "
+	echo " |                                  NOTA:                                     |"
+	echo " |  Habilita la Depuración USB en tu terminal: (Opciones de desarrollador).   |"
+	echo " |                  Conecte el dispositivo al PC via USB.                     |"
+	echo " |____________________________________________________________________________|"
+	echo
+	
+		if [[ $(adb devices | grep "device" -c) -gt "1" ]] ; then
+			 echo
+		echo "-Ingresa la ruta de la APK a copiar"
+		echo
+		echo "-Ejemplo: /system/framework/framework-res.apk "
+		echo
+		printf "Input: "
+		read INPUT
+			adb pull /system/framework/framework-res.apk ./imported/framework-res.apk
+			echo
+			echo " Done importing framework-res.apk to: (/other/imported) folder"
+		    java -jar apktool.jar if ./imported/framework-res.apk
+			echo
+            echo "--((framework-res.apk installed))--"
+		else
+		echo
+			echo -e " \e[1;31mERROR.\e[0m  No device connected."
+			echo
+			echo -e " \e[1;31mERROR.\e[0m  Import failed. "
+		fi
+ fi

@@ -1,0 +1,32 @@
+#! /bin/bash
+
+current=`pwd`
+
+dir5=APKs_copiadas_desde_el_terminal.f  
+    echo
+	cd Tools
+	echo "  ____________________________________________________________________________ "
+	echo " |                                  NOTA:                                     |"
+	echo " |  Habilita la Depuración USB en tu terminal: (Opciones de desarrollador).   |"
+	echo " |                  Conecte el dispositivo al PC via USB.                     |"
+	echo " |____________________________________________________________________________|"
+	echo
+	printf "Pull twframework-res.apk from an ADB device (\e[1;37mY\e[0m/\e[1;31mN\e[0m)? "
+	read INPUT
+	if [[ x$INPUT == "xY" || x$INPUT == "xy" || x$INPUT == "x" ]] ;  then
+		if [[ $(adb devices | grep "device" -c) -gt "1" ]] ; then
+			echo
+			echo "-Pulling twframework-res.apk from device."
+			adb pull /system/framework/twframework-res.apk ../$dir5/twframework-res.apk
+			echo
+			echo " Done importing twframework-res.apk to: (/Tools/imported) folder"
+			java -jar apktool.jar if ../$dir5/twframework-res.apk
+			echo
+			echo "--((twframework-res.apk installed))--"
+		else
+		echo
+			echo -e " \e[1;31mERROR.\e[0m  No device connected."
+			echo
+			echo -e " \e[1;31mERROR.\e[0m  Import failed. "
+		fi
+ fi

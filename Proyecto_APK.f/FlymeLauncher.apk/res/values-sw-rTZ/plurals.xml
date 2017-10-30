@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="number_of_items_selected">
+        <item quantity="other">Vipengee %1$d vimechaguliwa</item>
+        <item quantity="zero">Vipengee %1$d vimechaguliwa</item>
+        <item quantity="one">Vipengee %1$d vimechaguliwa</item>
+    </plurals>
+</resources>

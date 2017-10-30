@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meizu.flyme.launcher.ShortcutIcon android:background="@drawable/focusable_view_bg" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meizu.flyme.launcher.IconBackGroundView android:id="@id/shortcut_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="@string/icon_background_alpha" />
+    <com.meizu.flyme.launcher.ShortcutIconLayout android:orientation="vertical" android:id="@id/shortcut_icon" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/app_icon" android:layout_width="@dimen/iconsize" android:layout_height="@dimen/iconsize" android:src="@drawable/ic_launcher_folder" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.meizu.flyme.launcher.BubbleTextView android:id="@id/app_name" style="@style/WorkspaceIcon.folder" />
+            <ImageView android:id="@id/selected_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_check" android:scaleType="center" />
+            <FrameLayout android:id="@id/push_activity" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/pushme_background" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/push_view_marginLeft" android:layout_marginTop="@dimen/push_view_marginTop" android:layout_marginRight="@dimen/push_view_marginRight" android:layout_marginBottom="@dimen/push_view_marginBottom">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/push_icon" android:paddingRight="@dimen/push_view_padding_right" android:layout_width="@dimen/push_icon_width" android:layout_height="@dimen/push_icon_height" />
+                    <TextView android:textSize="@dimen/push_text_size" android:textColor="@color/workspace_icon_text_color" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/push_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="sans-serif-medium" />
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+    </com.meizu.flyme.launcher.ShortcutIconLayout>
+</com.meizu.flyme.launcher.ShortcutIcon>

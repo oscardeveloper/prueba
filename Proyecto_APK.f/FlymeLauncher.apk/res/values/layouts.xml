@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="custom_content_page_indicator_marker">false</item>
+    <item type="layout" name="custom_workspace_cling">false</item>
+    <item type="layout" name="nfc_custom_actionbar">false</item>
+    <item type="layout" name="nfc_share">false</item>
+    <item type="layout" name="nfc_share_items">false</item>
+    <item type="layout" name="uninstall_msg">false</item>
+    <item type="layout" name="wallpaper_cropper">false</item>
+    <item type="layout" name="wallpaper_picker">false</item>
+    <item type="layout" name="wallpaper_picker_image_picker_item">false</item>
+    <item type="layout" name="wallpaper_picker_item">false</item>
+    <item type="layout" name="wallpaper_picker_live_wallpaper_item">false</item>
+    <item type="layout" name="wallpaper_picker_third_party_item">false</item>
+    <item type="layout" name="wallpaper_preview">false</item>
+</resources>

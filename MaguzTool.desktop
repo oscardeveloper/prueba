@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Icon[es_VE]=gnome-panel-launcher
+Name[es_VE]=MaguzTool
+Exec=/home/oscar/Escritorio/MaguzTool/start.sh
+Comment[es_VE]=erramienta
+Name=mitoll
+Comment=erramienta
+Icon=gnome-panel-launcher

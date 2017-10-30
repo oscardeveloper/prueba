@@ -1,0 +1,32 @@
+#! /bin/bash
+
+current=`pwd`
+dir5=Framework_copiados_desde_el_terminal.f
+
+    echo
+	cd Tools
+	echo "  ____________________________________________________________________________ "
+	echo " |                                  NOTA:                                     |"
+	echo " |  Habilita la Depuración USB en tu terminal: (Opciones de desarrollador).   |"
+	echo " |                  Conecte el dispositivo al PC via USB.                     |"
+	echo " |____________________________________________________________________________|"
+	echo
+	printf " Extraer  SystemUI.apk from (/system/priv-app) (\e[1;37mY\e[0m/\e[1;31mN\e[0m)? "
+	read INPUT
+	if [[ x$INPUT == "xY" || x$INPUT == "xy" || x$INPUT == "x" ]] ;  then
+		if [[ $(adb devices | grep "device" -c) -gt "1" ]] ; then
+			echo
+			echo "--Pulling SystemUI.apk from device."
+			adb pull /system/priv-app/SystemUI.apk ../$dir5/SystemUI.apk
+	        echo 
+			echo "--Done importing SystemUI.apk to: (/Tools/imported) folder"
+		  java -jar apktool.jar if ../$dir5/SystemUI.apk
+		echo
+            echo "--((framework-res.apk installed))--"
+		else
+		echo
+			echo -e " \e[1;31mERROR.\e[0m  No device connected."
+			echo
+			echo -e " \e[1;31mERROR.\e[0m  Import failed. "
+		fi
+ fi

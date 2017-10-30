@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launcher_menu>
+    <application>
+        <pkg name="com.eg.android.AlipayGphone" />
+        <menu title="付款" data="alipays://platformapi/startapp?appId=20000056" icon="e0a4" type="0" />
+        <menu title="我的二维码" data="alipays://platformapi/startApp?appId=20000085" icon="e08e" type="0" />
+        <menu title="扫一扫" data="alipays://platformapi/startapp?appId=10000007" icon="e071" type="0" />
+        <menu title="转账" data="alipays://platformapi/startapp?appId=09999988" icon="e0ac" type="0" />
+    </application>
+    <application>
+        <pkg name="com.autonavi.minimap" />
+        <menu title="路线规划" data="androidamap://openFeature?featureName=PathSearch" icon="e05b" type="0" />
+        <menu title="周边分类" data="androidamap://openFeature?featureName=AroundSearch" icon="e006" type="0" />
+    </application>
+    <application>
+        <pkg name="com.tencent.qqmusic" />
+        <menu title="听歌识曲" data="com.tencent.qqmusic.recognize.RecognizeActivity" icon="e028" type="1" />
+    </application>
+    <application>
+        <pkg name="com.youku.phone" />
+        <menu title="扫一扫" data="com.zijunlin.zxing.CaptureActivity" icon="e071" type="1" />
+        <menu title="搜索" data="com.soku.searchsdk.activity.SearchActivity" icon="e020" type="1" />
+        <menu title="缓存" data="com.youku.ui.activity.DownloadPageActivity" icon="e05e" type="1" />
+    </application>
+    <application>
+        <pkg name="com.mt.mtxx.mtxx" />
+        <menu title="万能相机" data="com.meitu.library.camera.CameraActivity" icon="e072" type="1" />
+    </application>
+    <application>
+        <pkg name="com.nuomi" />
+        <menu title="到店付" data="bainuo://searchresult?keyword=到店付" icon="e0aa" type="0" />
+    </application>
+    <application>
+        <pkg name="tv.danmaku.bili" />
+        <menu title="缓存" data="tv.danmaku.bili.ui.videodownload.VideoDownloadListActivity" icon="e05e" type="1" />
+    </application>
+    <application>
+        <pkg name="com.dianping.v1" />
+        <menu title="查商户" data="com.dianping.tuan.activity.SearchDealActivity" icon="e020" type="1" />
+        <menu title="扫一扫" data="com.google.zxing.client.android.CaptureActivity" icon="e071" type="1" />
+    </application>
+    <application>
+        <pkg name="com.storm.smart" />
+        <menu title="本地缓存" data="com.storm.smart.activity.LocalActivity" icon="e05e" type="1" />
+    </application>
+    <application>
+        <pkg name="com.tudou.android" />
+        <menu title="缓存" data="com.tudou.ui.activity.CacheActivity" icon="e05e" type="1" />
+        <menu title="搜索" data="com.tudou.ui.fragment.SearchTudouActivity" icon="e020" type="1" />
+    </application>
+    <application>
+        <pkg name="com.mogujie" />
+        <menu title="蘑菇相机" data="mgjclient://post/lifestyle?origin_act=0" icon="e072" type="0" />
+    </application>
+</launcher_menu>

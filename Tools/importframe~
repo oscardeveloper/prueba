@@ -1,0 +1,33 @@
+#! /bin/bash
+
+current=`pwd`
+
+dir5=Framework_copiados_desde_el_terminal.f
+
+	echo
+	cd Tools
+	echo "  ____________________________________________________________________________ "
+	echo " |                                  NOTA:                                     |"
+	echo " |  Habilita la Depuración USB en tu terminal: (Opciones de desarrollador).   |"
+	echo " |                  Conecte el dispositivo al PC via USB.                     |"
+	echo " |____________________________________________________________________________|"
+	echo
+	printf " Copiar framework-res.apk Desde el terminal (\e[1;37mY\e[0m/\e[1;31mN\e[0m)? "
+	read INPUT
+	if [[ x$INPUT == "xY" || x$INPUT == "xy" || x$INPUT == "x" ]] ;  then
+		if [[ $(adb devices | grep "device" -c) -gt "1" ]] ; then
+			echo
+			echo "--Copiando framework-res.apk."
+			adb pull /system/framework/framework-res.apk ../$dir5/framework-res.apk
+			echo
+			echo " Done importing framework-res.apk to: ($dir5)"
+		    java -jar apktool.jar if ../$dir5/framework-res.apk
+			echo
+            echo "--((framework-res.apk installed))--"
+		else
+		echo
+			echo -e " \e[1;31mERROR.\e[0m  No device connected."
+			echo
+			echo -e " \e[1;31mERROR.\e[0m  Import failed. "
+		fi
+ fi

@@ -1,0 +1,36 @@
+#! /bin/bash
+
+current=`pwd`
+dir4=(4)_Inst_Custom-Framework
+
+    cd $dir4
+	echo "  ____________________________________________________________________________ "
+	echo " |                                  NOTA:                                     |"
+	echo " | Introduce las APK: framework-res.apk, twframework-res.apk y SystemUI.apk,  |"
+	echo " | en la ruta : /other/CustomFrame.                                           |"
+	echo " |____________________________________________________________________________|"
+	echo
+	if [[ -f framework-res.apk ]]; then
+	echo 
+	    echo "Custom framework-res.apk found."
+		localMode="true"
+	else
+	   echo -e " \e[1;31mERROR.\e[0m  Custom framework-res.apk no found."
+	fi
+
+	if [[ -f framework-res.apk ]]; then
+		if [[ $localMode == "true" ]]; then
+			echo
+			printf "Install framework-res.apk (\e[1;37mY\e[0m/\e[1;31mN\e[0m)? "
+		read INPUT
+		if [[ x$INPUT == "xy" || x$INPUT == "xY" || x$INPUT == "x" ]]; then
+	           echo
+	           cd ../other
+		java -jar apktool.jar if ../$dir4/framework-res.apk
+		    echo
+		echo "--((framework-res.apk installed))--"
+		  else
+		      echo "  Installation Canceled"
+ fi
+ fi
+ fi

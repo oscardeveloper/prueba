@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="values_open_staggeredgridview_alpha">
+        <item>0.0</item>
+        <item>0.0</item>
+        <item>0.001</item>
+        <item>0.003</item>
+        <item>0.006</item>
+        <item>0.008</item>
+        <item>0.12</item>
+        <item>0.16</item>
+        <item>0.2</item>
+        <item>0.24</item>
+        <item>0.29</item>
+        <item>0.34</item>
+        <item>0.39</item>
+        <item>0.45</item>
+        <item>0.5</item>
+        <item>0.55</item>
+        <item>0.61</item>
+        <item>0.66</item>
+        <item>0.71</item>
+        <item>0.76</item>
+        <item>0.8</item>
+        <item>0.84</item>
+        <item>0.88</item>
+        <item>0.92</item>
+        <item>0.94</item>
+        <item>0.97</item>
+        <item>0.99</item>
+        <item>1.0</item>
+    </string-array>
+    <string-array name="values_open_staggeredgridview_scale">
+        <item>0.0</item>
+        <item>0.005</item>
+        <item>0.025</item>
+        <item>0.07</item>
+        <item>0.16</item>
+        <item>0.29</item>
+        <item>0.425</item>
+        <item>0.535</item>
+        <item>0.615</item>
+        <item>0.68</item>
+        <item>0.735</item>
+        <item>0.775</item>
+        <item>0.815</item>
+        <item>0.845</item>
+        <item>0.870</item>
+        <item>0.895</item>
+        <item>0.915</item>
+        <item>0.930</item>
+        <item>0.945</item>
+        <item>0.955</item>
+        <item>0.965</item>
+        <item>0.975</item>
+        <item>0.980</item>
+        <item>0.990</item>
+        <item>0.990</item>
+        <item>0.995</item>
+        <item>0.995</item>
+        <item>1.0</item>
+    </string-array>
+</resources>
