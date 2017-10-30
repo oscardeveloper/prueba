@@ -29,7 +29,7 @@ date_str=`date '+%m%d%y'`
 logs=$(pwd)/logs
 
 #crea los directorios de trabajo, al iniciar el scripts.
-#si algum directorio no existe,se creara automaticamente.
+
 
 #checkdir () {
 echo
@@ -42,6 +42,7 @@ clear
         echo "--Done"
 fi
 #}
+#si algum directorio no existe,se creara automaticamente.
 
 if [[ ! -d ./$dir1 ]]; then
 	mkdir -p ./$dir1
