@@ -42,7 +42,7 @@ clear
         echo "--Done"
 fi
 #}
-#si algum directorio no existe,se creara automaticamente.
+#si algum directorio no existe,se creara automaticamente..
 
 if [[ ! -d ./$dir1 ]]; then
 	mkdir -p ./$dir1
